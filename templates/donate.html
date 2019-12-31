@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DreamsDream</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+{% load staticfiles %}
+      <link rel="shortcut icon" type="image/png" href="{% static 'dd_logo.gif' %}">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Assistant', sans-serif;
+        }
+
+        .nav {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration:none !important;
+            color:black;
+        }
+        .donate_notice{
+            font-size: 20px;
+
+        }
+        #donate1, #donate2, #donate3{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .donate_section{
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        #btn{
+            width: 200px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <div class="row text-center nav">
+            <div class="col-md-1"></div>
+            <div class="col-md-2"><a href="{% url 'index' %}">INDEX</a></div>
+            <div class="col-md-2"><a href="{% url 'about' %}">ABOUT</a></div>
+            <div class="col-md-2"><a href="{% url 'schoolLV' %}">SCHOOLS</a></div>
+            <div class="col-md-2"><a href="{% url 'donate' %}">DONATE</a></div>
+            <div class="col-md-2"><a href="{% url 'contact' %}">CONTACT</a></div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 donate_notice text-center">
+                <span id="donate1">Impossible dreams come true</span>
+                <br>
+                <span id="donate2">Building 100 schools around the world</span>
+                <br>
+                <br>
+                100% of your donation will go directly into building schools.
+                <br>
+                There is no administrative cost since our administration is run by volunteers.
+                <br>
+                Dreams Dream has already built more than 50 schools around the world.
+                <br>
+                <span id="donate3">Join us and make a change!</span>
+        </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 donate_section">
+                <span class="title">DONATE</span>
+                <br>
+                1. bank transer
+                <br>
+                Send your donation to the following account:
+                <br>
+                WOORI BANK 1005-402-595949 DreamsDream
+                <br>
+                2. Paypal
+                <br> if you would like to donate via PayPal, click the following button to proceed:<br><br>
+                <div class="container">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="SBLV57CK7TCZL">
+                    <input id="btn" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit">
+                    </form>
+                </div>
+                3. become a sustained donor
+                <br>
+                set up an automatic payment
+                <br>
+                <br>
+                Donation inquiries:
+                <br>
+                DIRECTOR: sinsia104@hanmail.net
+                <br>
+                (refer to our facebook page to ensure how we use the donations)
+
+
+
+
+
+
+            </div>
+            <div class="col-md-6 donate_section">
+                <span class="title">VOLUNTEER</span>
+                <br>
+                Architectural Project Coordinator
+                <br>
+                Architectural Designer
+                <br>
+                Architectural project managers
+                <br>
+                <br>
+                <span class="title">LONG-TERM VOLUNTEER</span>
+                <br>
+                school teacher
+                <br>
+                school administrator
+                <br>
+                other duties
+                <br>
+
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
